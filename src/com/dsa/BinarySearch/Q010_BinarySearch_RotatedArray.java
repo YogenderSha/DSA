@@ -26,14 +26,14 @@ public class Q010_BinarySearch_RotatedArray {
 	 * start element i.e. it lies in the array before pivot element. Hence set
 	 * start=mid+1
 	 */
-	public static int ans(int[] arr, int target) {
-		int pivot = findPivot(arr);
-		if (arr[pivot] == target) {
+	public static int ans(int[] nums, int target) {
+		int pivot = findPivot(nums);
+		if (nums[pivot] == target) {
 			return pivot;
 		}
-		int pos1 = BinarySearch(arr, target, 0, pivot - 1);
+		int pos1 = BinarySearch(nums, target, 0, pivot - 1);
 		if (pos1 == -1) {
-			int pos2 = BinarySearch(arr, target, pivot + 1, arr.length - 1);
+			int pos2 = BinarySearch(nums, target, pivot + 1, nums.length - 1);
 			return pos2;
 		}
 		return pos1;
@@ -45,6 +45,7 @@ public class Q010_BinarySearch_RotatedArray {
 
 		while (start <= end) {
 			int mid = start + (end - start) / 2;
+			
 			if (mid < end && arr[mid] > arr[mid + 1]) {
 				return mid;
 			}

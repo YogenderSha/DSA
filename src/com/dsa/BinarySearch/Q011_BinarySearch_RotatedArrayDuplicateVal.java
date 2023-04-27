@@ -3,7 +3,7 @@ package com.dsa.BinarySearch;
 public class Q011_BinarySearch_RotatedArrayDuplicateVal {
 
 	public static void main(String[] args) {
-		int[] ar = { 4, 4, 4, 0, 1, 2, 3,4 };
+		int[] ar = { 4, 0, 1, 2, 3,4 };
 		System.out.println("The pivot of the array is : " +ar[findPivot(ar)]);
 
 
