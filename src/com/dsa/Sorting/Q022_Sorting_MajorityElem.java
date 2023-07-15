@@ -11,6 +11,8 @@ public class Q022_Sorting_MajorityElem {
 	public static void main(String[] args) {
 		int[] arr= {2,2,1,1,1,2,2};
 		System.out.println(MajorityElem(arr));
+		Arrays.sort(arr);
+		System.out.println(Arrays.toString(arr));
 
 	}
 	//Moore Voting Algorithm
