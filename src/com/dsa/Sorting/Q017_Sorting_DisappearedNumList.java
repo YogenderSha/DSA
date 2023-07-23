@@ -31,7 +31,6 @@ public class Q017_Sorting_DisappearedNumList {
 
 		// Checking the Array
 		List<Integer> list = new ArrayList<>();
-		;
 		for (i = 0; i < nums.length; i++) {
 			if (nums[i] != i + 1) {
 				list.add(i + 1);
